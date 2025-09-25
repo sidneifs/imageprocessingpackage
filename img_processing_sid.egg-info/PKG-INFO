@@ -1,20 +1,39 @@
+Metadata-Version: 2.4
+Name: img_processing_sid
+Version: 0.0.1
+Summary: Pacote Python para processamento de imagens: combinação, transformação, leitura, salvamento e visualização.
+Home-page: https://github.com/sidneifs/imageprocessingpackage
+Author: Sidnei Silva
+Author-email: supersidnei@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
 # imageprocessingpackage
 
 ## Image Process Package
 
-Pacote Python para processamento de imagens, incluindo funções de combinação, transformação, leitura, salvamento e visualização de imagens.
+Pacote Python para processamento de imagens, incluindo funÃ§Ãµes de combinaÃ§Ã£o, transformaÃ§Ã£o, leitura, salvamento e visualizaÃ§Ã£o de imagens.
 
 ## Funcionalidades
 
-- Comparação de similaridade entre imagens (SSIM)
-- Transferência de histograma entre imagens
+- ComparaÃ§Ã£o de similaridade entre imagens (SSIM)
+- TransferÃªncia de histograma entre imagens
 - Redimensionamento de imagens
 - Leitura e salvamento de arquivos de imagem
-- Visualização de imagens e histogramas RGB
+- VisualizaÃ§Ã£o de imagens e histogramas RGB
 
-## Instalação
+## InstalaÃ§Ã£o
 
-Recomenda-se utilizar um ambiente virtual. Instale as dependências com:
+Recomenda-se utilizar um ambiente virtual. Instale as dependÃªncias com:
 
 ```bash
 pip install -r requirements.txt
@@ -32,11 +51,11 @@ from img_processing.utils.plot import plot_image, plot_result, plot_histogram
 img1 = read_image('caminho/para/imagem1.png')
 img2 = read_image('caminho/para/imagem2.png')
 
-# Comparação de similaridade
+# ComparaÃ§Ã£o de similaridade
 diff = find_difference(img1, img2)
 plot_image(diff)
 
-# Transferência de histograma
+# TransferÃªncia de histograma
 matched = transfer_histogram(img1, img2)
 plot_result(img1, img2, matched)
 
@@ -50,10 +69,10 @@ save_image(img_resized, 'caminho/para/imagem_redimensionada.png')
 
 ## Estrutura do Projeto
 
-- `img_processing/processing/combination.py`: Funções de comparação e transferência de histograma
-- `img_processing/processing/transformation.py`: Função de redimensionamento
+- `img_processing/processing/combination.py`: FunÃ§Ãµes de comparaÃ§Ã£o e transferÃªncia de histograma
+- `img_processing/processing/transformation.py`: FunÃ§Ã£o de redimensionamento
 - `img_processing/utils/io.py`: Leitura e salvamento de imagens
-- `img_processing/utils/plot.py`: Visualização de imagens e histogramas
+- `img_processing/utils/plot.py`: VisualizaÃ§Ã£o de imagens e histogramas
 
 ## Testes com Imagens de Natureza
 
@@ -67,16 +86,16 @@ save_image(img_resized, 'caminho/para/imagem_redimensionada.png')
     python test_natureza.py
     ```
 
-3. O script irá:
-    - Comparar as imagens e salvar `natureza_diff.png` (diferença/semelhança)
+3. O script irÃ¡:
+    - Comparar as imagens e salvar `natureza_diff.png` (diferenÃ§a/semelhanÃ§a)
     - Transferir histograma e salvar `natureza_matched.png`
     - Redimensionar e salvar `natureza_resized.png`
 
-4. Visualize os resultados usando as funções de plot do pacote ou abrindo os arquivos gerados na pasta `images/`.
+4. Visualize os resultados usando as funÃ§Ãµes de plot do pacote ou abrindo os arquivos gerados na pasta `images/`.
 
-Se não houver imagens, consulte o arquivo `images/README.txt` para instruções de como obtê-las.
+Se nÃ£o houver imagens, consulte o arquivo `images/README.txt` para instruÃ§Ãµes de como obtÃª-las.
 
-### Sugestão de sites para baixar imagens livres de direitos autorais
+### SugestÃ£o de sites para baixar imagens livres de direitos autorais
 
 - [Unsplash](https://unsplash.com/s/photos/nature)
 - [Pixabay](https://pixabay.com/pt/images/search/natureza/)
@@ -88,6 +107,6 @@ Baixe as imagens desejadas, salve como `natureza1.png` e `natureza2.png` na past
 
 Sidnei Silva ([GitHub](https://github.com/sidneifs))
 
-## Licença
+## LicenÃ§a
 
 [MIT](https://choosealicense.com/licenses/mit/)
